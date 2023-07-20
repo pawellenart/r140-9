@@ -1,0 +1,53 @@
+{
+    "External": [
+        {
+            "title": "Big Buck Bunny (DASH-CLEAR)",
+            "externalSourceUrl": "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd",
+            "playbackMode": "VOD"
+        },
+        {
+            "title": "Bitdash (HLS-CLEAR)",
+            "externalSourceUrl": "https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8",
+            "playbackMode": "VOD"
+        },
+        {
+            "title": "Tears of Steel (DASH-WV-ENCRYPTED)",
+            "externalSourceUrl": "https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd",
+            "externalSourceLicenseUrl": "https://proxy.uat.widevine.com/proxy?provider=widevine_test",
+            "playbackMode": "VOD"
+        },
+        {
+            "title": "Big Buck Bunny (DASH-PR-ENCRYPTED)",
+            "externalSourceUrl": "https://amssamples.streaming.mediaservices.windows.net/683f7e47-bd83-4427-b0a3-26a6c4547782/BigBuckBunny.ism/manifest(format=mpd-time-csf)",
+            "externalSourceLicenseUrl": "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(persist:false,sl:150)",
+            "playbackMode": "VOD"
+        },
+        {
+            "title": "H264/AAC CENC CBCS 1080p (DASH-PR-ENCRYPTED)",
+            "externalSourceUrl": "https://test.playready.microsoft.com/media/dash/APPLEENC_CBCS_BBB_1080p/1080p.mpd",
+            "externalSourceLicenseUrl": "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(persist:false,sl:150)",
+            "playbackMode": "VOD"
+        },
+        {
+            "title": "H264/AAC CENC CBCS 1080p (HLS-PR-ENCRYPTED)",
+            "externalSourceUrl": "https://test.playready.microsoft.com/media/dash/APPLEENC_CBCS_BBB_1080p/1080p_alternate.m3u8",
+            "externalSourceLicenseUrl": "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(persist:false,sl:150)",
+            "playbackMode": "VOD"
+        },
+        {
+            "title": "Low Latency Streaming (DASH-CLEAR)",
+            "externalSourceUrl": "https://akamaibroadcasteruseast.akamaized.net/cmaf/live/657078/akasource/out.mpd",
+            "playbackMode": "VOD"
+        },
+        {
+            "title": "Dynamic Ad Insertion (HLS-CLEAR)",
+            "externalSourceUrl": "https://mrproxy.dev.mr.tv3cloud.com/mkpz/stpzclearhlsvod/CraveMcMorris/index.m3u8?zoneid=1234_12",
+            "playbackMode": "VOD"
+        },
+        {
+            "title": "4K Media (HLS-CLEAR)",
+            "externalSourceUrl": "https://cdn.bitmovin.com/content/demos/4k/38e843e0-1998-11e9-8a92-c734cd79b4dc/manifest.m3u8",
+            "playbackMode": "VOD"
+        }
+    ]
+}

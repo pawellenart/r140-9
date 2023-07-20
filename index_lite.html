@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::MK Lite Web SDK for Browser Client (Master)::</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAACMuAAAjLgAAAAAAAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////7+/v/////////////////////////////////+/v7//////////v///////////////////v7///////////////////////////////////////////////////////////////////79///////+/f3////+/////v/+/v3/9vHs///+/v///////////////////////v7+//bx6//+/v///vv0///+/f/+/v3///7+//z6+P//////4tTB/4tTBv/o3c7///////z6+P/9/fz//////+bZyf+JTwD/6eLd//XSev/w0In//////9bCpf+OWA3/5tnJ/9jFr/98PQD/3s67///////+/fz//fv6///////cy7j/eTgA/+DVzv/0z3T/99qS/9rLuv98PAD/m2ow//fz7P/ayLD/f0EA/+TWxP/28uz/xqqE//fz7v//////3cy2/30/AP/ezrn//////9fGrv97PAD/m2sy//fz7P//////2cet/4FEAP/VwKP/oHI7/3ArAP+ofkf//////97OuP97OwD/5djI/+HTwP99PwD/o3Y7//n18P///////v39/9jGrf+HTQD/ilEN/4hPEf+6mGf/ejoA/66HV//byrH/ezwA/+bayv/Xw6z/djQA/6yETv///////v79//7+/f/XxK3/fkAA/4ZMB//bybD//////8qwjP98PQD/lWIh/4RKAP/dzLb//////9O7jv93NgD/p31J//37+P//////5tvK/5ViHP/ayLD///////z6+P//////y7GO/4BCAP9/QgD/49S5/9XP///Iv///0bmR/3c1AP+ofkn//Pr2///////9/Pr////+//79/f///////fz7///////KsY7/g0gA//Xszf+AaO3/Uy/T///////KsI//hEgA/+TWxf///v7///7+//79/f/////////////////+/v3//v79//Pu5/////7/9vX+//Lw/P////7//v39//Xw6f/+/v7//////////v////////////////////////////79/f////////////////////////////79/f///////////////////////////////////////////////////////v7+///////+/v///v7//////////////v7+////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- WMCRefApp CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- WMC Player -->
+    <script src="../dist/wmc.prod.secure.js"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://www.mediakind.com" target="_blank" style="padding-top: 10px;">
+                <img src="./resources/logo/logo-white.svg" alt="MediaKind" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index_lite.html">RefApp-Lite</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Quick Links
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://launch.mgmt.tv3cloud.net" target="_blank">MediaFirst
+                                Launch Management</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://reachclient.dev.mr.tv3cloud.com"
+                                target="_blank">ReachClient DevTest</a>
+                            <a class="dropdown-item" href="https://reachclient.pprod.mr.tv3cloud.com"
+                                target="_blank">ReachClient PProd</a>
+                            <a class="dropdown-item" href="https://reachclient.cip.mr.tv3cloud.com"
+                                target="_blank">ReachClient CIP</a>
+                            <a class="dropdown-item" href="https://reachclient.cid.mr.tv3cloud.com"
+                                target="_blank">ReachClient CID</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://operatorportal.dev.mr.tv3cloud.com"
+                                target="_blank">Operator Portal DevTest</a>
+                            <a class="dropdown-item" href="https://operatorportal.pprod.mr.tv3cloud.com"
+                                target="_blank">Operator Portal PProd</a>
+                            <a class="dropdown-item" href="https://operatorportal.cip.mr.tv3cloud.com"
+                                target="_blank">Operator Portal CIP</a>
+                            <a class="dropdown-item" href="https://operatorportal.cid.mr.tv3cloud.com"
+                                target="_blank">Operator Portal CID</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"
+                                href="https://reference.dashif.org/dash.js/v2.7.0/samples/dash-if-reference-player/index.html"
+                                target="_blank">DASH
+                                Reference Client</a>
+                            <a class="dropdown-item" href="https://bitmovin.com/demos/stream-test"
+                                target="_blank">Bitmovin Reference Client</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../docs/index.html" target="_blank">Docs</a>
+                    </li>
+                </ul>
+                <div id="app-name-version" class="text-sm-center navbar-brand">WMC-SDK</div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="flex-shrink-0">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Player -->
+                <div class="col-12 col-lg-8">
+                    <div id="player-container">
+                        <audio id="audio-element"></audio>
+                        <video id="video-element" poster="resources/images/poster.svg" crossOrigin></video>
+                        <div id="subtitle-container"></div>
+                        <div id="spinner">
+                            <i class="fas fa-circle-notch fa-spin" aria-hidden="true"></i>
+                        </div>
+                        <div id="toast-message"></div>
+                        <div id="error-message-container">
+                            <div>
+                                <h6>Error!
+                                    <button style="float: right;background-color: transparent;border: 0px solid;color: white;" id="close-btn">&times;</button>
+                                </h6>
+                            </div>
+                            <hr style="border: 1px solid white;">
+                            <p>Code: <span id="error-code"></span></p>
+                            <p>Message: <span id="error-message"></span></p>
+                        </div>
+                        <div id="brand-image">
+                            <a id="brand-url" href="https://www.mediakind.com" target="_blank">
+                                <img id="band-logo" src="./resources/logo/logo-white.svg" alt="Mediakind" height="30">
+                            </a>
+                        </div>
+                        <div id="settings-menu">
+                            <form>
+                                <div class="form-check form-switch">
+                                    <input type="checkbox" class="form-check-input" id="cc-toggle">
+                                    <label class="form-check-label" for="cc-toggle">Closed Caption</label>
+                                </div>
+                                <div class="form-group" id="subtitle-selection">
+                                    <label for="subtitle-track-select"
+                                        class="col-form-label col-form-label-sm">Subtitles</label>
+                                    <select name="subtitle-track-select" id="subtitle-track-select"
+                                        class="form-control form-control-sm"></select>
+                                </div>
+                                <div class="form-group" id="audio-selection">
+                                    <label for="audio-track-select"
+                                        class="col-form-label col-form-label-sm">Audio</label>
+                                    <select name="audio-track-select" id="audio-track-select"
+                                        class="form-control form-control-sm"></select>
+                                </div>
+                                <div class="form-group" id="playback-quality-selection">
+                                    <label for="playback-quality-select" class="col-form-label col-form-label-sm">Video
+                                        Quality</label>
+                                    <select name="playback-quality-select" id="playback-quality-select"
+                                        class="form-control form-control-sm">
+                                    </select>
+                                </div>
+                                <div class="form-group" id="playback-speed-selection">
+                                    <label for="playback-speed-select" class="col-form-label col-form-label-sm">Playback
+                                        Speed</label>
+                                    <select name="playback-speed-select" id="playback-speed-select"
+                                        class="form-control form-control-sm">
+                                        <option value="0.25">0.25x</option>
+                                        <option value="0.5">0.5x</option>
+                                        <option value="1" selected>1x</option>
+                                        <option value="1.5">1.5x</option>
+                                        <option value="2">2x</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="log-level-select" class="col-form-label col-form-label-sm">Logging
+                                        Level</label>
+                                    <select name="log-level-select" id="log-level-select"
+                                        class="form-control form-control-sm">
+                                        <option value="0">None</option>
+                                        <option value="1">Error</option>
+                                        <option value="2">Info</option>
+                                        <option value="3">Warn</option>
+                                        <option value="4" selected>Debug</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="video-controls" class="container-fluid">
+                            <div id="video-advertisement">
+                                <div id="skip-controls">
+                                    <button type="button" id="show-ads">Ads <i class="fas fa-newspaper"></i></button>
+                                    <button type="button" id="skip-ads">Skip Ads <i
+                                            class="fas fa-step-forward"></i></button>
+                                </div>
+                            </div>
+                            <div id="program-time-container">
+                                <div id="program-start-time"></div>
+                                <div id="program-end-time"></div>
+                            </div>
+                            <div id="video-progress">
+                                <input type="range" id="video-slider" class="slider" value="0" step="0.1">
+                            </div>
+                            <div id="video-control-buttons">
+                                <div class="video-control-buttons-group">
+                                    <button type="button" id="restart-btn" class="fas fa-redo" data-toggle="tooltip"
+                                        data-placement="bottom" title="Restart Playback"></button>
+                                    <button type="button" id="skip-back-btn" class="fas fa-backward"
+                                        data-toggle="tooltip" data-placement="bottom" title="Skip Back"></button>
+                                    <button type="button" id="play-pause-btn" class="fas fa-play" data-toggle="tooltip"
+                                        data-placement="bottom" title="Play or Pause"></button>
+                                    <button type="button" id="stop-btn" class="fas fa-stop" data-toggle="tooltip"
+                                        data-placement="bottom" title="Stop or Reset Playback"></button>
+                                    <button type="button" id="skip-forward-btn" class="fas fa-forward"
+                                        data-toggle="tooltip" data-placement="bottom" title="Skip Forward"></button>
+                                    <button type="button" id="live-btn">LiveNow</button>
+                                    <div id="volume-control">
+                                        <button type="button" id="volume-btn" class="fas fa-volume-down"></button>
+                                        <div id="volume-progress">
+                                            <input type="range" class="slider" id="volume-slider" min="0" max="1"
+                                                step="0.1" value="1">
+                                        </div>
+                                    </div>
+                                    <div id="video-time-update">
+                                        <span id="video-position">00:00:00</span>/<span
+                                            id="video-duration">00:00:00</span>
+                                    </div>
+                                </div>
+                                <div class="video-control-buttons-group">
+                                    <button type="button" id="settings-btn" class="fas fa-cog" data-toggle="tooltip"
+                                        data-placement="bottom" title="Settings"></button>
+                                    <button type="button" id="fullscreen-btn" class="fas fa-expand"
+                                        data-toggle="tooltip" data-placement="bottom"
+                                        title="Toggle Fullscreen"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content-poster">
+                            <img id="poster-image" src="" alt="Content Poster Image"
+                                style="max-width: 100%; max-height: 100%; margin: auto;">
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Player Metrics -->
+                    <div class="card">
+                        <div class="card-header text-center"><strong>Player Metrics</strong></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <p><strong>Player State:</strong> <span id="player-state">Idle</span></p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Startup Time (sec):</strong> <span id="startup-time">0</span></p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Playback Speed:</strong> <span id="playback-speed">1x</span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p><strong>Live Latency(sec):</strong> <span id="video-latency">0</span></p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Video Buffer(sec):</strong> <span id="video-buffer-length">0</span></p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Audio Buffer(sec):</strong> <span id="audio-buffer-length">0</span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p><strong>Seek Start:</strong> <span id="seek-start">0</span></p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Seek End:</strong> <span id="seek-end">0</span></p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Seek Duration:</strong> <span id="seek-duration">0</span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p><strong>Video Dropped Frames:</strong> <span id="video-dropped-frames">0</span>
+                                    </p>
+                                </div>
+
+                                <div class="col">
+                                    <p><strong>Frame Rate (sec):</strong> <span id="video-framerate">0</span></p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Closed Captions:</strong> <span
+                                            id="closed-captions-state">Disabled</span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p><strong>Resolution:</strong> <span id="video-resolution"></span></p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Video Codec:</strong> <span id="video-codec"></span></p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Audio Codec:</strong> <span id="audio-codec"></span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p><strong>Audio Tracks:</strong></p>
+                                    <ul id="audio-tracks">
+                                        <!-- JavaScript will populate the list here -->
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Subtitle Tracks:</strong></p>
+                                    <ul id="subtitle-tracks">
+                                        <!-- JavaScript will populate the list here -->
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <p><strong>Video Qualities:</strong></p>
+                                    <ul id="video-qualities">
+                                        <!-- JavaScript will populate the list here -->
+                                    </ul>
+                                </div>
+                                <div class="row" id="ad-events-container">
+                                    <div class="col">
+                                        <p><strong>AD Events:</strong></p>
+                                        <div id="ad-events"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Source URL Input and Source List Card -->
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header"><strong>Config</strong></div>
+                        <div class="card-body">
+                            <div class="form-group form-row">
+                                <label class="col-sm col-form-label-sm" for="external-source-url">External Source
+                                    URL</label>
+                                <input type="text" class="form-control form-control-sm save-config"
+                                    id="external-source-url" placeholder="Enter valid HLS/DASH manifest URL here">
+                                <small class="form-text text-muted">Supported source types: DASH on Chrome & Windows
+                                    Edge Browsers; HLS on Safari</small>
+                            </div>
+                            <div class="form-group form-row">
+                                <label class="col-sm col-form-label-sm" for="external-source-license-url">External
+                                    License URL (LA_URL)</label>
+                                <input type="text" class="form-control form-control-sm save-config"
+                                    id="external-source-license-url" placeholder="Enter license (LA_URL) here">
+                                <small class="form-text text-muted">Supported license types: Widevine on Chrome;
+                                    Playready on Windows Edge; Fairplay on Safari</small>
+                            </div>
+                            <button id="load-external-source-btn" class="mt-2 btn btn-sm btn-outline-secondary"
+                                type="button">Load & Play</button>
+                            <hr>
+                            <!-- <div class="form-group form-row"> -->
+                            <label for="load-source-config" class="col-form-label-sm">Load Source
+                                Config From</label>
+                            <!-- <div class="ml-2 col-form-label-sm col-12"> -->
+                            <input class="load-config-config-radio" id="load-config-url-radio" name="configSource"
+                                type="radio" checked value="url" /> URL
+                            <input class="load-config-config-radio ml-2" id="load-config-file-radio" name="configSource"
+                                type="radio" value="file" /> File
+
+                            <input type="file" id="load-source-config-file-path"
+                                class="mt-2 file-input save-config load-config-file-path"
+                                placeholder="Source config file path" aria-label="Source config file path"
+                                aria-describedby="basic-addon2" />
+                            <div id="load-config-file-url" class="mt-2 config-load-btn-container load-config-file-url">
+                                <input type="text" id="load-source-config-path"
+                                    class="mt-2 form-control form-control-sm save-config"
+                                    placeholder="Source config file path" aria-label="Source config file path"
+                                    aria-describedby="basic-addon2" />
+                                <button id="load-source-config-btn" class="mt-2 btn btn-sm btn-outline-secondary"
+                                    type="button">Load External Config</button>
+                            </div>
+                            <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-header"><strong>Source List</strong></div>
+                        <div class="card-body">
+                            <div class="list-group source-list" id="source-list-accordion">
+                                <!-- JavaScript will populate the source list items if a valid source list config is fed to it. -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <!-- WMCRefApp -->
+    <script src="./js/WMCRefAppUIManager.js"></script>
+    <script src="./js/WMCRefApp.js"></script>
+</body>
+
+</html>

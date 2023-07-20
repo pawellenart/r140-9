@@ -1,0 +1,7 @@
+{
+    "index.html": "Basic Player",
+    "index_mk.html": "Basic MK Player",
+    "index_react.html": "Basic ReactJs Player",
+    "index_react_multiple.html": "Basic ReactJs Multiple Players",
+    "index_react_multiple_live.html": "Basic ReactJs Multiple LIVE Player"
+}

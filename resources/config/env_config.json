@@ -1,0 +1,24 @@
+{
+  "environments": {
+    "NBA.ProdB": {
+      "defaultSelection": true,
+      "active": true,
+      "authUrl": "https://identity-dev.nba.com/dev/auth",
+      "stsTokenUrl": "https://ottapp-appgw-client.prodb.nba.tv3cloud.com/S1/sts/v1/oauth/jwtsignin",
+      "rightsGroupUrl": "https://ottapp-appgw-client.prodb.nba.tv3cloud.com/sts/bootstrap",
+      "bootStrapUrl": "",
+      "subscriberUrl": "",
+      "stsToken": "AuthToken1jZBbb9wgEIV_zfoNi5sxPPjBTbNJmm4qNZvbI4bxLqptLMBN3F9fOxdFqtoqEgyjM99Bo1NP1sFgoDqmNMYNqzd0u5wA3eyGw6hDmvMxeNvkQ6Pz9JOZzk82N75fqOwixgnCH96Y4n8sK_uOmiP0OuZPfRe9HnMfDov6GJdCMS6W57k4C0NyaV5a02nXr_NB91BNEVlheFEKjtqyaRAvgSCluEacl5zZtrSc82wPgx7Sha0stHrqUlZ3nX8E-6bH94ExfnpGFZHKckUQlXj5TkiOFMcCWSWsYQa30JLs84vtJkL4qOWV_ejqZ2Fc9yOYyA39RJSSStK1W-_f0-ydCT76Nr1m_panXPMU_8gz-A6qODXRBNdAyOopHX1wv3Ryftjp-KNiElNVEEkIZYLSQhIuCkGFJLhUTGSnT6MLEL8NFRGcY1ZgpbKTADqBfREJK4RYxEuYzyZnKylsC5wS1DIBiBfcICkMRkxzMC0AawXNznf1yfV5TQtRySvo7v317d2tkWl82B4Lv91f3ustvsPl7svVgzp1w9f9vP9-2DD7Gw"
+    },
+    "NBA.ProdC": {
+      "active": true,
+      "authUrl": "https://identity-dev.nba.com/dev/auth",
+      "stsTokenUrl": "https://ottapp-appgw-client.prodc.nba.tv3cloud.com/S1/sts/v1/oauth/jwtsignin",
+      "rightsGroupUrl": "https://ottapp-appgw-client.prodc.nba.tv3cloud.com/sts/bootstrap",
+      "bootStrapUrl": "",
+      "subscriberUrl": "",
+      "stsToken": "AuthToken1rVHLbtswEPwa6yaBb0kHHeSkVtLCbZGkDpAbHyubiCQKJJXY_vpKeSBA0RY9FCCWi9nZAXamnoyFQUN1iHEMK1qvyGZ-HrqTHfaj9PGUjd4ZnQ1KZvGJ6s5NJtOun1nJdQgT-F92Qwx_WVm4H1R9gF6G7Nh3wckxc34_o89hLgQhPn8vxRoYoo2nudWdtP0yH2QP1RRSYYQBQJBqgouU6ZamZat1CkpzwKVoC9EmdzDIIV6bykArpy4mdde5ZzDvePgYaO2mF6oSlOWFQVIpoaAlOZOEtbIklLOSmcJIDqwtiaRSYkqk4RJLoZXgIJUmPLl8lfwRwP8PuQ3IOHlovJvGWW_2ByEskjf5f3Wi8eNyLhEkX5E1Lsuc5nTp8FzY0vw-od5q74Jr41uO7xkVS0biDxl510EVJhW0twp8Uk_x4Lw9y2jdsJXhsaIFIiXHBcaECkJ4gZnggogCo7ykIvl0HK2H8G2osGCMUYRLlFz42QowryDOOc5n8AucmsmaavaA4laglGjNU0YMTwusIFUSiSIHLjTg5GpbX9xe1YSLyq_vv970d_cPzb7Fp8t9E49Ne96q8w41-ecHe_Nkv-_Wm52oH1fU_AQ"
+    }
+  },
+  "showLogin": false
+}
